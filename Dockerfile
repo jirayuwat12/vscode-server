@@ -13,7 +13,6 @@ RUN sudo apt-get update -y
 RUN sudo apt-get install -y python
 #install pip
 RUN sudo apt-get install -y software-properties-common
-RUN add-apt-repository universe
 RUN sudo apt-get install -y python3-pip 
 # Install unzip + rclone (support for remote filesystem)
 RUN sudo apt-get update && sudo apt-get install unzip -y
