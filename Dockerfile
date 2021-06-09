@@ -12,7 +12,7 @@ ENV SHELL=/bin/bash
 RUN sudo apt-get update -y
 RUN sudo apt-get install -y python
 RUN sudo apt update
-RUN sudo apt install python3-pip
+RUN sudo apt install python-pip
 # Install unzip + rclone (support for remote filesystem)
 RUN sudo apt-get update && sudo apt-get install unzip -y
 RUN curl https://rclone.org/install.sh | sudo bash
